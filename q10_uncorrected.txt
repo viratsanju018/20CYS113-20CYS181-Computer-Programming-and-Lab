@@ -1,0 +1,17 @@
+#include<stdio.h>
+struct complex {
+int real;
+int imag;
+};
+int main() {
+struct complex s1,s2,s3;
+scanf("%d",&s1.real);
+scanf("%d",&s1.imag);
+scanf("%d",&s2.real);
+scanf("%d",&s2.imag);
+s3.real = ((s1.real)*(s2.real)) - ((s1.imag)*(s2.imag));
+s3.imag = ((s1.real)*(s2.imag)) + ((s2.real)*(s1.imag));
+printf("The output of the program is %d + i %d ", s3.real,s3.imag);
+return 0;
+}
+
